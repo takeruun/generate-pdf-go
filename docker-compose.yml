@@ -1,0 +1,10 @@
+version: '3'
+services:
+  golang:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/go/src/github.com/takeruun/generate-pdf-go
+    tty: true
+    stdin_open: true
